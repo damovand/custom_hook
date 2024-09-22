@@ -1,9 +1,9 @@
 import React from 'react';
  import UseFetch from './UseFetch';
- import './FetchData.css'
+ import './FetchYogaData.css'
 
- const FetchData = () => {
-     const [data]=UseFetch('https://api.npoint.io/9045c260b1565daa9e15');
+ const FetchYogaData = () => {
+     const [data]=UseFetch('https://api.npoint.io/4459a9a10e43812e1152');
      console.log(data);
    return (
      <>
@@ -14,8 +14,8 @@ import React from 'react';
         <li className='list_data'>
              <h3>{e.name}</h3>
              <p><strong>Importance: </strong>{e.importance}</p>
-             <p><strong>Benefits: </strong>{e.benefits6}</p>
-             <p><strong>Time to eat: </strong>{e.best_time_to_intake}</p>
+             <p><strong>Benefits: </strong>{e.benefits}</p>
+             <p><strong>Time to eat: </strong>{e.time_duration}</p>
              </li>
        </>
      ))}
@@ -23,4 +23,4 @@ import React from 'react';
      </>
    )
  }
- export default FetchData
+ export default FetchYogaData
